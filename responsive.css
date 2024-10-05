@@ -1,0 +1,31 @@
+/* Estilos adaptativos para hacer la página responsive */
+
+/*-------------Responsive-------------*/
+/* Diseño en pantallas pequeñas*/
+@media (max-width: 750px) {
+    /* Hace que el video de tiktok y el texto se coloquen en forma de columna cuando el ancho sea menor al ancho establecido */
+    #viral {
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+}
+
+/* Diseño para celulares */
+@media (max-width: 400px) {
+    /* Hace que el video de tiktok y el texto se coloquen en forma de columna cuando el ancho sea menor al ancho establecido */
+    #viral {
+        display: flex;
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    .phone-frame {
+        transform: scale(0.75); /* Reduce el tamaño al % indicado */
+    }
+    .phone-frame:hover {
+        transform: scale(0.70); /* Reduce el tamaño al % indicado */
+    }
+}

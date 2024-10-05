@@ -1,0 +1,35 @@
+/* Estilos de la seccion de redes sociales */
+
+/* Redes */
+
+.social-embeds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.counter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+.counter:hover {
+    transform: scale(1.1);
+}
+.icon {
+    height: 14vw;
+    padding: 0.5em;
+}
+
+.count {
+    border-radius: 2em;
+    box-shadow: 0 0 20px rgba(206, 155, 230, 0.9);
+    overflow: hidden;
+    height: 80px;
+    width: 280px;
+    margin: 5px;
+    pointer-events: none;
+}

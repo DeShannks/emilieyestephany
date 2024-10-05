@@ -1,0 +1,79 @@
+/* Estilos de la seccion del video viral (con forma de telefono) */
+
+.viral {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #fccdf9;
+}
+
+/*Texto*/
+#nuestro-video {
+    font-family: "Roboto", sans-serif;
+    font-size: 7vw; /* Tamaño relativa al ancho de la ventana */
+    text-align: center; /* Centra el texto */
+    margin: auto; /* Elimina márgenes por defecto */
+    padding: 0.5em; /* Agrega un poco de espacio alrededor del texto */
+    color: #C156DF; /* Color del texto */
+}
+
+/*---------Estilos del telefono---------*/
+
+/* Diseño de telefono */
+.phone-frame {
+    margin: 2em; 
+    width: 20em; 
+    height: 35em; 
+    border: 16px black solid; /* Lateral */
+    border-top: 1em black solid; /* Superior*/
+    border-bottom: 1em black solid; /* Inferior*/
+    border-radius: 36px; 
+    position: relative; 
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(206, 155, 230, 0.7); /* Sombra */
+    background-color: black;
+    z-index: 1; /* Profundidad */
+}
+
+/* Efecto de zoom out al pasar el mouse */
+.phone-frame:hover {
+    transform: scale(0.90); /* Reduce el tamaño al % indicado */
+}
+
+.phone-frame::after, .phone-frame::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    background: rgba(190, 190, 190, 0.15);
+    border-radius: 10px;
+    transform: translateX(-50%); /* Centrado */
+    z-index: 2; /* Profundidad */
+}
+
+/*Dynamic Island*/
+.phone-frame::before {
+    top: -0.8em;
+    width: 11em;
+    height: 1.8em;
+}
+
+/*Boton de home de abajo*/
+.phone-frame::after {
+    bottom: 0.3em;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*Contenido del telefono*/
+.tiktok-embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -20px; /*Ajusta al borde */
+    margin: 0; 
+    padding: 0; 
+    display: block; /* Ocupe el contenedor */
+    object-fit: cover; /* Llene el contenido */
+}
